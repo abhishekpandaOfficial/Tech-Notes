@@ -1,0 +1,240 @@
+https://docs.google.com/document/d/1Hi6C8xXheLTg3RjcYME6vIh_wDmQ9sgZDoSiEpxYaDU/edit
+-----------------linux basics-----------------------
+
+1  clear
+    2  mkdir folder1
+    3  ls
+    4  mkdir folder2
+    5  ls
+    6  cd folder1
+    7  ls
+    8  mkdir folder3
+    9  ls
+   10  cd folder3
+   11  cd
+   12  cd folder1
+   13  mkdir folder4
+   14  cd folder4
+   15  /folder/1/foldercd
+   16  cd
+   17  cd ~/folder1/folder4
+   18  cd ..
+   19  cd ~/folder1/folder4
+   20  cd
+   21  clear
+   22  history
+   23  clear
+   24  touch file.txt
+   25  ls
+   26  nano file2.txt
+   27  ls
+   28  cat file2.txt
+   29  cat file.txt
+   30  nano file2.txt
+   31  nano file.txt
+   32  cat file.txt
+   33  clear
+   34  echo "this is contents of file created by echo method" > file3.txt
+   35  ls
+   36  cat file3.txt
+   37  history
+   38  clear
+   39  ls
+   40  cp file.txt folder1
+   41  cd folder1
+   42  ls
+   43  cat file.txt
+   44  cd
+   45  cd folder2
+   46  ls
+   47  cd
+   48  mv file2.txt folder2
+   49  ls
+   50  cd folder2
+   51  ls
+   52  cd
+   53  lsblk
+   54  clear
+   55  ls
+   56  mv file.txt newfile.txt
+   57  ls
+   58  mv folder1 newfolder
+   59  ls
+   60  history
+   61  clear
+   62  ls
+   63  rm file3.txt
+   64  ls
+   65  rm newfile.txt
+   66  cd folder2/
+   67  ls
+   68  rm file2.txt
+   69  cd
+   70  clear
+   71  ls
+   72  rmdir folder2
+   73  ls
+   74  rmdir newfolder
+   75  ls newfolder/
+   76  cd folder3
+   77  cd newfolder/
+   78  ls
+   79  cd folder3
+   80  ls
+   81  cd ..
+   82  cd folder4
+   83  ls
+   84  cd ..
+   85  ls
+   86  rmdir folder3
+   87  ls
+   88  cd
+   89  rm -r newfolder
+   90  ls\
+   91  ls
+   92  clear
+   93  history
+   94  clear
+   95  sudo  su
+   96  sudo su
+   97  apt-get update
+   98  sudo su
+   99  sudo apt-get update
+  100  sudo apt-get install apache2
+  101  sudo apt-get install -y apache2
+  102  clear
+  103  history
+  104  clear
+  105  pwd
+  106  whoami
+  107  date
+  108  man pwd
+  109  man rm
+  110  who
+  111  w
+  112  clear
+  113  ping google.com
+  114  alias pg="ping"
+  115  pg google.com
+  116  ping facebook.com
+  117  clear
+  118  history
+
+
+
+--------------------------------linux advance--------------------------------
+
+------------------------------------------Advance Linux Commands------------------------------------------------------
+
+GREP command : Searching any content. -- (case sensitive)
+    1  ps
+    2  clear
+    3  ps
+    4  ps | grep bash
+    5  ps | grep ba
+    6  ps | grep Ba
+    7  nano sample
+    8  ls
+    9  grep hello sample
+   10  grep Hello sample
+   11  grep he sample
+   12  grep -i Hello sample
+   13  grep -w He sample
+   14  nano sample
+   15  grep -w He sample
+   16  ps
+   17  ps | grep bash
+   18  sample | grep Hello
+   19  grep -w is sample
+   20  clear
+
+
+Alias : Give your own name to the commands. 
+   21  ping google.com
+   22  alias pg="ping"
+   23  alias
+   24  pg google.com
+   25  sudo apt-get install apache2 -y
+   26  sudo service apache2 stop
+   27  alias astart = "sudo service apache2 start"
+   28  alias astop = "sudo service apache2 stop"
+   29  alias astop ="sudo service apache2 stop"
+   30  alias astop="sudo service apache2 stop"
+   31  alias astart="sudo service apache2 start"
+   32  alias
+   33  astart
+   34  astop
+   35  astart
+   36  clear
+   37  nano ~/.bashrc
+   38  source ~/.bashrc
+   39  alias
+   40  clear
+   41  alias
+   42  ec hello world
+   43  history
+
+AWK : Generating a report in Linux.
+   45  nano report
+   46  ls
+   47  awk '{print $1}' report
+   48  awk '{print $1,$4}' report
+   49  awk '{print NR,$1,$4}' report
+   50  awk '{print $1,$NF}' report
+   51  awk '{print NF}' report
+   52  awk '{if(NR==4) print $0}' report
+   53  man awk
+
+Crontab : If you want to execute any command periodically or in a time in future.
+   56  crontab -l
+   57  crontab -e
+   58  ls
+   59  date
+   60  ls
+   61  date
+   62  ls
+   63  date
+   64  ls
+   65  crontab -e
+   66  clear
+   67  date
+   68  ls
+   69  date
+   70  ls
+   71  cat test.txt
+   72  date > test.txt
+   73  cat test.txt
+   74  crontab -e
+   75  rm test.txt
+   76  ls
+   77  date
+   78  ls
+   79  cat test.txt
+
+HTOP : Show all the processes running and how much it used the memory or CPU.
+ htop
+ kill -9 (process id)
+
+WGET : To download a file from web.
+ wget (copy the link address)
+
+MAN : Manual - describe the command.
+
+Shutdown : Shutdown your machine
+ sudo shutdown -P now
+
+
+
+
+-----------------------------Awk commands--------------------
+
+ajay manager account 45000
+sunil clerk account 25000
+varun manager sales 50000
+amit manager account 47000
+tarun peon sales 15000
+deepak clerk sales 13000
+satvik director purchase 80000
+
+
+
